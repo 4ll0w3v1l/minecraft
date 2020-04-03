@@ -1,0 +1,52 @@
+*{
+
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+
+}
+body{
+
+	background-color: blue;
+
+}
+
+#divFirst{
+
+	background-color:yellow;
+	height: 50vh;
+	z-index: 2;
+
+}
+
+#divSecond{
+
+	background-color: blue;
+	height: 50vh;
+	z-index: 1;
+
+}
+
+#number{
+
+	text-align:center;
+	font-size: 75px;
+
+}
+
+#numberAnim{
+
+	text-align:center;
+	font-size: 75px;
+	animation: numberAnimation 3s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes numberAnimation{
+
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(180deg);}
+
+}
